@@ -1,0 +1,7 @@
+C:\Users\laudanif\Documents\Visual Studio 2013\Projects\Yoox.Platform.LoggingProxy\LoggingProxy\bin\Debug\LoggingProxy.dll
+C:\Users\laudanif\Documents\Visual Studio 2013\Projects\Yoox.Platform.LoggingProxy\LoggingProxy\bin\Debug\LoggingProxy.pdb
+C:\Users\laudanif\Documents\Visual Studio 2013\Projects\Yoox.Platform.LoggingProxy\LoggingProxy\bin\Debug\log4net.dll
+C:\Users\laudanif\Documents\Visual Studio 2013\Projects\Yoox.Platform.LoggingProxy\LoggingProxy\bin\Debug\log4net.xml
+C:\Users\laudanif\Documents\Visual Studio 2013\Projects\Yoox.Platform.LoggingProxy\LoggingProxy\obj\Debug\LoggingProxy.csprojResolveAssemblyReference.cache
+C:\Users\laudanif\Documents\Visual Studio 2013\Projects\Yoox.Platform.LoggingProxy\LoggingProxy\obj\Debug\LoggingProxy.dll
+C:\Users\laudanif\Documents\Visual Studio 2013\Projects\Yoox.Platform.LoggingProxy\LoggingProxy\obj\Debug\LoggingProxy.pdb

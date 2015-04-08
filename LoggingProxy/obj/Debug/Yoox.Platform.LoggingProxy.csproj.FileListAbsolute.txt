@@ -1,0 +1,6 @@
+c:\users\laudanif\documents\visual studio 2013\Projects\Yoox.Platform.LoggingProxy\Yoox.Platform.LoggingProxy\bin\Debug\Yoox.Platform.LoggingProxy.dll
+c:\users\laudanif\documents\visual studio 2013\Projects\Yoox.Platform.LoggingProxy\Yoox.Platform.LoggingProxy\bin\Debug\Yoox.Platform.LoggingProxy.pdb
+c:\users\laudanif\documents\visual studio 2013\Projects\Yoox.Platform.LoggingProxy\Yoox.Platform.LoggingProxy\bin\Debug\log4net.dll
+c:\users\laudanif\documents\visual studio 2013\Projects\Yoox.Platform.LoggingProxy\Yoox.Platform.LoggingProxy\bin\Debug\log4net.xml
+c:\users\laudanif\documents\visual studio 2013\Projects\Yoox.Platform.LoggingProxy\Yoox.Platform.LoggingProxy\obj\Debug\Yoox.Platform.LoggingProxy.dll
+c:\users\laudanif\documents\visual studio 2013\Projects\Yoox.Platform.LoggingProxy\Yoox.Platform.LoggingProxy\obj\Debug\Yoox.Platform.LoggingProxy.pdb

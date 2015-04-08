@@ -1,0 +1,11 @@
+c:\users\laudanif\documents\visual studio 2013\Projects\Yoox.Platform.LoggingProxy\Yoox.Platform.LoggingProxyTests\bin\Debug\Yoox.Platform.LoggingProxyTests.dll
+c:\users\laudanif\documents\visual studio 2013\Projects\Yoox.Platform.LoggingProxy\Yoox.Platform.LoggingProxyTests\bin\Debug\Yoox.Platform.LoggingProxyTests.pdb
+c:\users\laudanif\documents\visual studio 2013\Projects\Yoox.Platform.LoggingProxy\Yoox.Platform.LoggingProxyTests\bin\Debug\Yoox.Platform.LoggingProxy.dll
+c:\users\laudanif\documents\visual studio 2013\Projects\Yoox.Platform.LoggingProxy\Yoox.Platform.LoggingProxyTests\bin\Debug\log4net.dll
+c:\users\laudanif\documents\visual studio 2013\Projects\Yoox.Platform.LoggingProxy\Yoox.Platform.LoggingProxyTests\bin\Debug\Yoox.Platform.LoggingProxy.pdb
+c:\users\laudanif\documents\visual studio 2013\Projects\Yoox.Platform.LoggingProxy\Yoox.Platform.LoggingProxyTests\bin\Debug\log4net.xml
+c:\users\laudanif\documents\visual studio 2013\Projects\Yoox.Platform.LoggingProxy\Yoox.Platform.LoggingProxyTests\obj\Debug\Yoox.Platform.LoggingProxyTests.csprojResolveAssemblyReference.cache
+c:\users\laudanif\documents\visual studio 2013\Projects\Yoox.Platform.LoggingProxy\Yoox.Platform.LoggingProxyTests\obj\Debug\Yoox.Platform.LoggingProxyTests.dll
+c:\users\laudanif\documents\visual studio 2013\Projects\Yoox.Platform.LoggingProxy\Yoox.Platform.LoggingProxyTests\obj\Debug\Yoox.Platform.LoggingProxyTests.pdb
+c:\users\laudanif\documents\visual studio 2013\Projects\Yoox.Platform.LoggingProxy\Yoox.Platform.LoggingProxyTests\bin\Debug\FakeItEasy.dll
+c:\users\laudanif\documents\visual studio 2013\Projects\Yoox.Platform.LoggingProxy\Yoox.Platform.LoggingProxyTests\bin\Debug\FakeItEasy.xml
