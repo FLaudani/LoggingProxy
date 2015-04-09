@@ -1,13 +1,10 @@
-﻿using log4net;
+﻿
+using log4net;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Runtime.Remoting;
 using System.Runtime.Remoting.Messaging;
 using System.Runtime.Remoting.Proxies;
-using System.Text;
-using System.Threading.Tasks;
+using System.Linq;
 
 namespace LoggingProxy
 {
@@ -15,14 +12,14 @@ namespace LoggingProxy
 
     public class LoggingProxy<T> : RealProxy
     {
-        private ILog Log;
+        private ILog _logger;
         private T _decorated;
 
         internal LoggingProxy(T decorated,ILog logger = null)
             : base(typeof(T))
         {
             _decorated = decorated;
-            Log = logger ?? LoggerFactory.Create();
+            _logger = logger ?? LoggerFactory.Create();
         }
 
         public override IMessage Invoke(IMessage msg)
@@ -35,7 +32,7 @@ namespace LoggingProxy
             
             args = string.IsNullOrEmpty(args) ? args : args.Remove(0, 1);
 
-            Log.Info(string.Format("Executing '{0}' with Args ({1})", methodCall.MethodName,args));
+            _logger.Info(string.Format("Executing '{0}' with Args ({1})", methodCall.MethodName,args));
             try
             {
                 var result = methodInfo.Invoke(_decorated, methodCall.InArgs);
@@ -43,7 +40,7 @@ namespace LoggingProxy
             }
             catch (Exception e)
             {
-                Log.Error(string.Format("Exception {0} occurred executing '{1}'", e.InnerException.Message, methodCall.MethodName), e.InnerException);
+                _logger.Error(string.Format("Exception {0} occurred executing '{1}'", e.InnerException.Message, methodCall.MethodName), e.InnerException);
                 return new ReturnMessage(e.InnerException, methodCall);
             }
         }
