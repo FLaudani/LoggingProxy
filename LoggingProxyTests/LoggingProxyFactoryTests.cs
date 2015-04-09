@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using FakeItEasy;
+using log4net;
 using LoggingProxy;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using log4net;
-using FakeItEasy;
 
 namespace LoggingProxyTests
 {
@@ -17,13 +13,9 @@ namespace LoggingProxyTests
         public void ObtainObjectsOfExpectedType()
         {
             Assert.IsInstanceOfType(
-                LoggingProxyFactory.Create<ITestObject>(
-                (_) =>
+                LoggingProxyFactory.Create<ITestObject>(_ =>
                 {
-                    _.CreateFunction(() =>
-                    {
-                        return new TestObject();
-                    });
+                    _.CreateFunction(() => new TestObject());
                 })
                 , typeof(ITestObject));
         }
@@ -31,16 +23,13 @@ namespace LoggingProxyTests
         [TestMethod]
         public void LogEveryOperation()
         {
-            ILog logger = A.Fake<ILog>();
+            var logger = A.Fake<ILog>();
 
             var sut = LoggingProxyFactory.Create<ITestObject>(
-                (_) =>
+                _ =>
                 {
                     _.UsingLogger(logger);
-                    _.CreateFunction(() =>
-                    {
-                        return new TestObject();
-                    });
+                    _.CreateFunction(() => new TestObject());
                 });
             sut.TestMethod();
 
@@ -50,16 +39,13 @@ namespace LoggingProxyTests
         [TestMethod]
         public void LogEveryOperationEvenWithArgs()
         {
-            ILog logger = A.Fake<ILog>();
+            var logger = A.Fake<ILog>();
 
             var sut = LoggingProxyFactory.Create<ITestObject>(
-                (_) =>
+                _ =>
                 {
                     _.UsingLogger(logger);
-                    _.CreateFunction(() =>
-                    {
-                        return new TestObject();
-                    });
+                    _.CreateFunction(() => new TestObject());
                 });
             sut.TestMethod(1);
 
@@ -70,16 +56,13 @@ namespace LoggingProxyTests
         [ExpectedException(typeof(NullReferenceException))]
         public void LogException()
         {
-            ILog logger = A.Fake<ILog>();
+            var logger = A.Fake<ILog>();
 
             var sut = LoggingProxyFactory.Create<ITestObject>(
-                (_) =>
+                _ =>
                 {
                     _.UsingLogger(logger);
-                    _.CreateFunction(() =>
-                    {
-                        return new TestObject();
-                    });
+                    _.CreateFunction(() => new TestObject());
                 });
 
             sut.ExceptionMethod();

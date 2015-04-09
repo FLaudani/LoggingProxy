@@ -5,3 +5,10 @@ C:\Users\laudanif\Documents\Visual Studio 2013\Projects\Yoox.Platform.LoggingPro
 C:\Users\laudanif\Documents\Visual Studio 2013\Projects\Yoox.Platform.LoggingProxy\LoggingProxy\obj\Debug\LoggingProxy.csprojResolveAssemblyReference.cache
 C:\Users\laudanif\Documents\Visual Studio 2013\Projects\Yoox.Platform.LoggingProxy\LoggingProxy\obj\Debug\LoggingProxy.dll
 C:\Users\laudanif\Documents\Visual Studio 2013\Projects\Yoox.Platform.LoggingProxy\LoggingProxy\obj\Debug\LoggingProxy.pdb
+D:\Progetti\LoggingProxy\LoggingProxy\bin\Debug\LoggingProxy.dll
+D:\Progetti\LoggingProxy\LoggingProxy\bin\Debug\LoggingProxy.pdb
+D:\Progetti\LoggingProxy\LoggingProxy\bin\Debug\log4net.dll
+D:\Progetti\LoggingProxy\LoggingProxy\bin\Debug\log4net.xml
+D:\Progetti\LoggingProxy\LoggingProxy\obj\Debug\LoggingProxy.csprojResolveAssemblyReference.cache
+D:\Progetti\LoggingProxy\LoggingProxy\obj\Debug\LoggingProxy.dll
+D:\Progetti\LoggingProxy\LoggingProxy\obj\Debug\LoggingProxy.pdb
