@@ -28,5 +28,10 @@ namespace LoggingProxy
             _logger = logger;
             return this;
         }
+
+        public void FromType<T>()
+        {
+            Create = () => { return Activator.CreateInstance<T>(); };
+        }
     }
 }

@@ -29,6 +29,14 @@ namespace LoggingProxyTests
         }
 
         [TestMethod]
+        public void ObtainObjectsOfExpectedTypeUsingSourceType()
+        {
+            Assert.IsInstanceOfType(
+                LoggingProxyFactory.Create<ITestObject>((_) =>_.FromType<TestObject>())
+                , typeof(ITestObject));
+        }
+
+        [TestMethod]
         public void LogEveryOperation()
         {
             ILog logger = A.Fake<ILog>();
