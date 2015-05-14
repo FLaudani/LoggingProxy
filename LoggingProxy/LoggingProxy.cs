@@ -10,13 +10,13 @@ namespace LoggingProxy
 {
 
 
-    public class LoggingProxy<T> : RealProxy
+    public class LoggingProxy : RealProxy
     {
         private ILog _logger;
-        private T _decorated;
+        private object _decorated;
 
-        internal LoggingProxy(T decorated,ILog logger = null)
-            : base(typeof(T))
+        internal LoggingProxy(object decorated,ILog logger = null)
+            : base(decorated.GetType())
         {
             _decorated = decorated;
             _logger = logger ?? LoggerFactory.Create();
@@ -46,6 +46,12 @@ namespace LoggingProxy
         }
         private object ProxyMe(object result)
         {
+            if (result == null)
+                return result;
+
+            if (typeof(MarshalByRefObject).IsAssignableFrom(result.GetType()) || result.GetType().IsInterface)
+                return new LoggingProxy(result,_logger).GetTransparentProxy();
+
             return result;
         }
         private class LoggerFactory

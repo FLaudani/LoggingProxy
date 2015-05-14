@@ -13,7 +13,7 @@ namespace LoggingProxy
             var configurator = new LoggingProxyCofngiurator();
             config(configurator);
 
-            return new LoggingProxy<T>(configurator.Create() as T,configurator.Logger).GetTransparentProxy() as T;
+            return new LoggingProxy(configurator.Create() as T,configurator.Logger).GetTransparentProxy() as T;
         }
     }
 }
